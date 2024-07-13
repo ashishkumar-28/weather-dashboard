@@ -1,38 +1,62 @@
-.App {
+.main-container {
+  /* background-image: url('path-to-your-background-image.jpg'); */
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.forecast-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.forecast-card .MuiCardContent-root {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.forecast-card .MuiTypography-root {
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive design */
+@media (max-width: 600px) {
+  .forecast-card .MuiCardContent-root {
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .forecast-card .MuiTypography-h6 {
+    font-size: 1rem;
   }
+
+  .forecast-card .MuiTypography-h5 {
+    font-size: 1.5rem;
+  }
+
+  .forecast-card .MuiTypography-subtitle1,
+  .forecast-card .MuiTypography-subtitle2 {
+    font-size: 0.875rem;
+  }
+}
+
+
+body {
+  background-image: url('./assets/Background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
