@@ -33,7 +33,7 @@ Weather Dashboard is a web application that allows users to check current weathe
    git clone https://github.com/your-username/weather-dashboard.git
    cd weather-dashboard
 
-2 **Install dependencies:**
+2. **Install dependencies:**
     npm install
 
 3. Create a .env file in the root directory and add your OpenWeatherMap API 
@@ -45,8 +45,12 @@ Weather Dashboard is a web application that allows users to check current weathe
 
 5. Open your browser and visit http://localhost:3000 to view the app.
 
-**Deployment**
-  The project is deployed on Vercel and can be accessed [here.](https://weather-dashboard-six-sigma.vercel.app/)
 
-**Contributing**
+## Deployment
+
+The project is deployed on Vercel and can be accessed [here.](https://weather-dashboard-six-sigma.vercel.app/)
+
+
+## Contributing
+
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and create a pull request.
